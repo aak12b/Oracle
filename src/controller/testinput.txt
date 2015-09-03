@@ -1,0 +1,2 @@
+<Buyer full name>;<Address>;<Date>
+<WoodType>:<Amount>;<WoodType>:<Amount>
