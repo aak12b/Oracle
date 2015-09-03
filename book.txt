@@ -1,0 +1,13 @@
+This is a new paragraph that I'm adding to this file,
+dubbed book.txt, as per assignment instructions. To the
+best of my knowledge we were supposed to add "a new 
+paragraph" to this file, and not knowing exactly what was
+expected has led me to write this in the hopes that I'm
+either correct or incorrect but witty. Below this I will 
+append the result of the git status command.
+
+
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
