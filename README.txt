@@ -1,3 +1,6 @@
+Name: Aaron Kemmer
+CS Username: kemmer
+
 Welcome.
 
 You have sucessfully obtained a copy of the contents in the oracle repository.
