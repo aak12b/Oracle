@@ -1,6 +1,3 @@
-/**
- * 
- */
 package controller;
 import java.io.*;
 import java.util.*;
@@ -9,11 +6,20 @@ import java.util.*;
  * @author Esteban
  * Modified by Aaron Kemmer for CEN5035
  *
+ *	@usage 
+ *	Compiled via "javac <pathtothisfile>"
+ *	Run via "java <srcpath> <inputpath>"
  */
 public class HardwoodSeller {
 
 	/**
 	 * @param args
+	 * 
+	 * Main sends the order file to be parsed.
+	 * Relevant dated is stored in corresponding HashMaps
+	 * within an inner class where it is used for calculations.
+	 * An ArrayList stores the resulting deliverable items
+	 * and their necessary data.
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -98,6 +104,11 @@ public class HardwoodSeller {
 
 	}
 	
+	/*
+	 * The following inner class replaces the
+	 * original WoodItem class defined in a file. That class
+	 * is to be removed as it is unused.
+	 */
 	private static class Deliverable{
 		private int amount;
 		private String type;
@@ -124,7 +135,6 @@ public class HardwoodSeller {
 			baseDels.put("Sawdust", new Double(1.0));
 		}
 
-		
 		public Deliverable(String woodType, int bf){
 			this.type = woodType;
 			this.amount = bf;
