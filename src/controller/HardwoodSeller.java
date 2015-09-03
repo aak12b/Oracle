@@ -3,6 +3,7 @@
  */
 package controller;
 import java.io.*;
+import java.util.*;
 
 /**
  * @author Esteban
@@ -18,7 +19,9 @@ public class HardwoodSeller {
 		// TODO Auto-generated method stub
 		String deliveryFile = args[0];
 		String info, order;
+		String name, date, address;
 		String[] customer, materials, fileResult;
+		HashMap fullOrder = new HashMap();
 		
 		fileResult = new String[2];
 		fileResult = readInputFile(deliveryFile);
@@ -26,8 +29,30 @@ public class HardwoodSeller {
 		info = fileResult[0];
 		order = fileResult[1];
 		
-		System.out.println(info);
-		System.out.println(order);
+		customer = info.split(";");
+		name = customer[0];
+		address = customer[1];
+		date = customer[2];
+		
+		materials = order.split(";");
+		
+		for(int counter = 0; counter < materials.length; ++counter){
+			String[] itemSplit = materials[counter].split(":");
+			
+			String first = itemSplit[0];
+			int second = Integer.parseInt(itemSplit[1]);
+			
+			fullOrder.put(first, second);
+		}
+		
+		Set set = fullOrder.entrySet();
+		Iterator i = set.iterator();
+		
+		while(i.hasNext()){
+			Map.Entry entry = (Map.Entry)i.next();
+			System.out.print(entry.getKey() + ": ");
+			System.out.println(entry.getValue());
+		}
 	}
 	
 	public static String[] readInputFile(String inputFilePath){
