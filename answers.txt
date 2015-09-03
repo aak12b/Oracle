@@ -1,0 +1,25 @@
+a) 2 commits by me, 6 by Esteban for a total of 8.
+
+b) .gitignore was last modified 13 days ago (committed August 	20th, 2015).
+
+c) src/controller/HardwoodSeller.java
+	src/model/WoodItem.java
+	.classpath
+	.gitattributes
+	.gitignore
+	.project
+	README.txt.txt
+	
+d) WoodItem.java modified 2 times
+	HardwoodSeller.java modified 1 time
+	
+e) "git log" prints a report of previous commits and their
+	details while "git status" prints a report of the difference
+	between the current state of the repository and the latest
+	synced state.
+	
+f) git log -- main.java
+
+g) git log --grep "transaction"
+
+h) git log --author="Lauren" --after="2014-1-5" --before="2015-6-14"
